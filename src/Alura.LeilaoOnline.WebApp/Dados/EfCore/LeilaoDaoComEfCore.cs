@@ -46,5 +46,7 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
             _context.Leiloes.Remove(leilao);
             _context.SaveChanges();
         }
+
+        
     }
 }
