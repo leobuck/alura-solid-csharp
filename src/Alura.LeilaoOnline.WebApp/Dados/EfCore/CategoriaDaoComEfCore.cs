@@ -14,11 +14,6 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
             _context = context;
         }
 
-        public void Alterar(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public Categoria BuscarPorId(int id)
         {
             return _context.Categorias.Include(c => c.Leiloes).First(c => c.Id == id);
@@ -27,16 +22,6 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
         public IEnumerable<Categoria> BuscarTodos()
         {
             return _context.Categorias.Include(c => c.Leiloes);
-        }
-
-        public void Excluir(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Incluir(Categoria obj)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
